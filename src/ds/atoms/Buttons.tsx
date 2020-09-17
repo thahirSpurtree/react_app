@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button }   from 'antd';
+import { Button } from 'antd';
 
-export const Buttons = () => {
+export const Buttons = (props: any) => {
     return (
-    <Button>Atomic Structure Button</Button>
+    <Button type="primary">{props.text}</Button>
     )
 }
 

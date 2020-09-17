@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import DashBoard from './pages/DashBoard';
+import { GlobalStyle } from './utils/globalStyle';
 
 function App() {
   return (
     <div className="App">
-      <DashBoard></DashBoard>
+      <GlobalStyle/>
+      <DashBoard />
     </div>
   );
 }

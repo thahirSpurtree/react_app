@@ -6,7 +6,7 @@ import { Buttons } from '../atoms';
 export const Cards = () => {
     return (
     <Card>
-        <Buttons />
+        <Buttons text="Reusable Atomic Button" />
     </Card>
     )
 }
