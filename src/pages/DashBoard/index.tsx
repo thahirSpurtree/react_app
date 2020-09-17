@@ -9,7 +9,7 @@ const StyledRow = styled(Row)`
 const DashBoard = () => {
   return (
     <StyledRow type="flex" justify="center" align="middle">
-      <Col xl={12} lg={12} md={24} sm={24} xs={24}>
+      <Col xl={4} lg={4} md={24} sm={24} xs={24}>
         <Cards />
       </Col>
     </StyledRow>
