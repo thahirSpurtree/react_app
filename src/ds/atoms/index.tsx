@@ -1,1 +1,1 @@
-export { Buttons } from './Buttons'
+export { Buttons, StyledDynamicButton } from './Buttons'
