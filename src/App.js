@@ -19,7 +19,7 @@ function App() {
         <Menu.Item key="app">
           About
         </Menu.Item>
-        <SubMenu
+        {/* <SubMenu
           key="SubMenu"
           title="Contact"
         >
@@ -27,7 +27,7 @@ function App() {
             <Menu.Item key="setting:1">services</Menu.Item>
             <Menu.Item key="setting:2">Management</Menu.Item>
           </Menu.ItemGroup>
-        </SubMenu>
+        </SubMenu> */}
       </Menu>
       <DashBoard />
     </div>
