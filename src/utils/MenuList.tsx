@@ -1,12 +1,14 @@
 import DashBoard from "../pages/DashBoard";
-import LandingPage from "../pages/LandingPage";
+import LandingPage from "../pages/PrivateContainer";
 
 const MenuList = [
     {
-        text: 'Home',
+        path:'/Landingpage',
+        text: 'Landing Page',
         component: LandingPage
     },
     {
+        path: '/Dashboard',
         text: 'Contact',
         component: DashBoard 
     }
