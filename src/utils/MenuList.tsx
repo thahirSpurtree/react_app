@@ -1,5 +1,5 @@
 import DashBoard from "../pages/DashBoard";
-import LandingPage from "../pages/PrivateContainer";
+import LandingPage from '../pages/LandingPage';
 
 const MenuList = [
     {
@@ -9,7 +9,7 @@ const MenuList = [
     },
     {
         path: '/Dashboard',
-        text: 'Contact',
+        text: 'DashBoard',
         component: DashBoard 
     }
 ];

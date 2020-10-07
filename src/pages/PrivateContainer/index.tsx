@@ -4,15 +4,15 @@ import { Route, Router, Switch } from "react-router-dom";
 import { MenuList } from "../../utils";
 import { history } from "../../utils/history";
 import Navigation from "../../utils/Navigation";
-import DashBoard from "../DashBoard";
+import LandingPage from "../LandingPage";
 import { navBar } from "./Navbar";
-
-const PrivateContainer = (isOpen, showMenu) => {
+import atomicLogo  from '../../assets/logo.png';
+const PrivateContainer = () => {
   return (
     <Router history={history}>
       <Layout>
-        <Navigation logoAltText="Gale Logo" isOpen={isOpen} menuOpen={showMenu}>
-          {navBar(showMenu)}
+        <Navigation logoAltText="Gale Logo" logoSrc={atomicLogo} logoSrcMobile={atomicLogo}>
+          {navBar()}
         </Navigation>
         <Switch>
           {MenuList.map((menu, index) => {
@@ -20,7 +20,7 @@ const PrivateContainer = (isOpen, showMenu) => {
               <Route key={index} path={menu.path} component={menu.component} />
             );
           })}
-          <Route path="/" component={DashBoard} />
+          <Route path="/" component={LandingPage} />
         </Switch>
       </Layout>
     </Router>

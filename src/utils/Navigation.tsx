@@ -87,12 +87,13 @@ const MenuList = styled.div`
     text-decoration: none;
     text-transform: capitalize;
     line-height: 40px;
+    color: #ffffff !important;
     &:hover {
       color: #ffff;
     }
   }
   .active {
-    color: #ffffff !important;
+    color: blue !important;
   }
 
   @media (min-width: ${Responsive.desktop}) {
